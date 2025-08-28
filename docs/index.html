@@ -134,15 +134,35 @@
               src="./images/factory-time-logo.png"
               alt=""
             />
-            <div class="items-baseline flex flex-row gap-4">
+            <div class="items-baseline flex flex-col">
               <span class="font-bold text-3xl text-orange-200">
                 FACTORY TIME
               </span>
-              <i class="fa-solid fa-minus"></i>
               <span class="font-bold text-stone-400">
                 Incremental automation game
               </span>
             </div>
+          </div>
+
+          <div class="flex flex-row gap-2 items-center h-full justify-center">
+            <a
+              href="#Home"
+              class="text-xl font-bold text-orange-200 hover:text-orange-300 h-full flex items-center px-2"
+            >
+              <i class="fa-solid fa-home"></i>
+            </a>
+            <a
+              href="#About"
+              class="text-xl font-bold text-orange-200 hover:text-orange-300 h-full flex items-center px-2"
+            >
+              ABOUT
+            </a>
+            <a
+              href="#Media"
+              class="text-xl font-bold text-orange-200 hover:text-orange-300 h-full flex items-center px-2"
+            >
+              MEDIA
+            </a>
           </div>
 
           <div class="flex flex-row gap-2">
@@ -202,8 +222,14 @@
           </div>
         </section>
 
-        <section class="flex flex-col items-center justify-center">
-          <h1 id="About"></h1>
+        <section id="About" class="flex flex-col items-center justify-center">
+          <hr class="w-full border-orange-400/50" />
+          <h1 class="text-3xl font-bold text-orange-200 py-4">About</h1>
+          <p>
+            A game about production inspired by incremental games and automation
+            games like Factorio, Satisfactory, etc...
+          </p>
+          <br />
           <img
             src="https://img.itch.zone/aW1hZ2UvMzgyMzExOC8yMjc5NzM1Mi5wbmc=/original/nHSEb7.png"
             alt=""
@@ -214,6 +240,30 @@
             alt=""
           />
         </section>
+
+        <section id="Media" class="flex flex-col items-center justify-center">
+          <hr class="w-full border-orange-400/50" />
+          <h1 class="text-3xl font-bold text-orange-200 py-4">Media</h1>
+          <a
+            href="https://www.youtube.com/watch?v=BlRtv7Ypmwk"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex flex-col items-center justify-center"
+          >
+            <span class="font-bold text-xl">
+              <span class="text-stone-400">
+                Good Games 200 - Factory Game
+              </span>
+              <small>by Fort Kenmei</small>
+            </span>
+            <img
+              class="w-96"
+              src="https://i3.ytimg.com/vi/BlRtv7Ypmwk/maxresdefault.jpg"
+              alt=""
+            />
+          </a>
+        </section>
+        <br />
       </main>
 
       <!-- <footer class="flex flex-col h-16 bg-stone-950"></footer> -->
