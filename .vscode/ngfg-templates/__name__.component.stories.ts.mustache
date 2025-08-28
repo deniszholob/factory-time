@@ -1,0 +1,30 @@
+import { Meta, StoryObj } from '@storybook/angular';
+
+import { {{upperCamelCaseName}}Component } from './{{dashCaseName}}.component';
+
+type ComponentWithCustomControls = {{upperCamelCaseName}}Component;
+
+export default {
+  // title: 'Components/{{upperReadableName}}',
+  component: {{upperCamelCaseName}}Component,
+  // decorators: [moduleMetadata({ imports: [] })],
+  parameters: {
+    docs: { description: { component: `{{upperCamelCaseName}}` } },
+    // layout: 'fullscreen', // https://storybook.js.org/docs/configure/story-layout
+  },
+  argTypes: {
+    /** === Input Mapping === */
+    // input: { options: ['---', ...Object.values(YourEnum)], mapping: YourEnum & { '---': undefined }, control: { type: 'select' }},
+    /** === Output Actions === */
+    // inputChange: { action: 'inputChange', table: { disable: true } },
+    /** === Control Hide === */
+    // someControl: { table: { disable: true } },
+     /** === Control Disable === */
+    // someControl: { control: { disable: true } },
+  },
+  args: {},
+} satisfies Meta<ComponentWithCustomControls>
+
+export const {{upperCamelCaseName}}: StoryObj<ComponentWithCustomControls> = {
+  render: (args) => ({ props: args }),
+}

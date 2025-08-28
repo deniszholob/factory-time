@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html
+  class="dark h-full scroll-smooth bg-neutral-700 text-neutral-300"
+  lang="en"
+>
+  <head>
+    <!-- Meta Data -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Denis Zholob" />
+    <meta name="keywords" content="Denis, Zholob" />
+    <meta name="title" content="Factory Time" />
+    <meta
+      name="description"
+      content="A game about production inspired by incremental games and Factorio"
+    />
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Factory Time" />
+    <meta
+      itemprop="description"
+      content="A game about production inspired by incremental games and Factorio"
+    />
+    <meta
+      itemprop="image"
+      content="https://deniszholob.github.io/game_web-factory/assets/screenshots/screenshot_1280x720.png"
+    />
+
+    <!-- Facebook Meta Tags -->
+    <meta
+      property="og:url"
+      content="https://deniszholob.github.io/game_web-factory/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Factory Time" />
+    <meta
+      property="og:description"
+      content="A game about production inspired by incremental games and Factorio"
+    />
+    <meta
+      property="og:image"
+      content="https://deniszholob.github.io/game_web-factory/assets/screenshots/screenshot_1280x720.png"
+    />
+    <meta property="og:author" content="Denis Zholob" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Factory Time" />
+    <meta
+      name="twitter:description"
+      content="A game about production inspired by incremental games and Factorio"
+    />
+    <meta
+      name="twitter:image"
+      content="https://deniszholob.github.io/game_web-factory/assets/screenshots/screenshot_1280x720.png"
+    />
+    <meta name="twitter:site" content="@deniszholob" />
+    <meta name="twitter:creator" content="@deniszholob" />
+
+    <!-- Title/Icon -->
+    <title>Factory Time</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="apple-touch-startup-image" href="assets/icons/splash.jpg" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#ffffff" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <base href="./" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Meta Tags Generated via http://heymeta.com -->
+    <!-- Icons generated with https://realfavicongenerator.net/ -->
+
+    <!-- Prefetch/Preconnect -->
+    <!-- <link rel="dns-prefetch" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous"> -->
+    <!-- <link rel="dns-prefetch" href="https://fonts.gstatic.com/s/"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com/s/" crossorigin="anonymous"> -->
+    <link rel="dns-prefetch" href="https://use.fontawesome.com" />
+    <link
+      rel="preconnect"
+      href="https://use.fontawesome.com"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"> -->
+
+    <!-- Fonts -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?"> -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v6.6.0/js/all.js"
+      integrity="sha384-dgEl3vRKux81M373f/TdgoDTV5oZj+yjHrr/1qR5b4btG5q63kYS62t5kod+7Q6v"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-28080172-12"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-28080172-12");
+    </script>
+
+    <!-- Stylesheets -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body class="flex bg-black h-screen w-screen flex-col overflow-hidden">
+    <div class="flex flex-col h-screen">
+      <header
+        class="h-16 bg-stone-950 flex flex-col items-center justify-center"
+      >
+        <div
+          class="h-full flex flex-row gap-2 justify-between w-full px-4 py-2 items-center"
+        >
+          <div class="flex flex-row gap-2 items-center">
+            <img
+              class="object-cover w-16 h-16"
+              src="./images/factory-time-logo.png"
+              alt=""
+            />
+            <div class="items-baseline flex flex-row gap-4">
+              <span class="font-bold text-3xl text-orange-200">
+                FACTORY TIME
+              </span>
+              <i class="fa-solid fa-minus"></i>
+              <span class="font-bold text-stone-400">
+                Incremental automation game
+              </span>
+            </div>
+          </div>
+
+          <div class="flex flex-row gap-2">
+            <a
+              href="https://discord.gg/PkyzXzz"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="border border-stone-500 bg-zinc-900 px-4 py-2 font-quattrocento-sans font-bold text-orange-200 outline-none hover:border-orange-300 hover:bg-zinc-800 rounded-md focus:border-orange-300 disabled:text-stone-400"
+            >
+              <i class="fa-brands fa-discord"></i>
+              CONNECT
+            </a>
+
+            <a
+              href="https://deniszholob.itch.io/factory-game"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="border border-stone-500 bg-zinc-900 px-4 py-2 font-quattrocento-sans font-bold text-orange-200 outline-none hover:border-orange-300 hover:bg-zinc-800 rounded-md focus:border-orange-300 disabled:text-stone-400"
+            >
+              <i class="fa-brands fa-itch-io"></i>
+              PLAY NOW
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main class="bg-stone-800 flex flex-col flex-1 overflow-auto">
+        <section
+          id="Home"
+          style="
+            background-image: linear-gradient(
+                rgba(42, 37, 24, 0.7) 0%,
+                rgba(1, 7, 17, 0.7) 70%
+              ),
+              url('./images/factory-time-bg.png');
+          "
+          class="bg-cover bg-center w-full min-h-[70vh] flex flex-col items-center justify-center"
+        >
+          <div class="flex flex-col items-center justify-center">
+            <img
+              class="max-w-screen-md"
+              src="./images/factory-time-title.png"
+              alt=""
+              style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5))"
+            />
+          </div>
+          <div class="flex flex-row items-center justify-center">
+            <a
+              href="https://deniszholob.itch.io/factory-game"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="border border-stone-500 text-2xl bg-zinc-900 px-4 py-2 font-quattrocento-sans font-bold text-orange-200 outline-none hover:border-orange-300 hover:bg-zinc-800 rounded-md focus:border-orange-300 disabled:text-stone-400"
+            >
+              <i class="fa-brands fa-itch-io"></i>
+              PLAY
+            </a>
+          </div>
+        </section>
+
+        <section class="flex flex-col items-center justify-center">
+          <h1 id="About"></h1>
+          <img
+            src="https://img.itch.zone/aW1hZ2UvMzgyMzExOC8yMjc5NzM1Mi5wbmc=/original/nHSEb7.png"
+            alt=""
+          />
+
+          <img
+            src="https://img.itch.zone/aW1hZ2UvMzgyMzExOC8yMjgwOTM4NS5wbmc=/original/kHCm7y.png"
+            alt=""
+          />
+        </section>
+      </main>
+
+      <!-- <footer class="flex flex-col h-16 bg-stone-950"></footer> -->
+    </div>
+  </body>
+</html>
