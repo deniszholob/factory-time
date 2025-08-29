@@ -123,69 +123,71 @@
   <body class="flex bg-black h-screen w-screen flex-col overflow-hidden">
     <div class="flex flex-col h-screen">
       <header
-        class="h-16 bg-stone-950 flex flex-col items-center justify-center"
+        class="bg-stone-950 flex flex-col lg:flex-row gap-4 items-center justify-between w-full px-4 py-2"
       >
-        <div
-          class="h-full flex flex-row gap-2 justify-between w-full px-4 py-2 items-center"
-        >
-          <div class="flex flex-row gap-2 items-center">
-            <img
-              class="object-cover w-16 h-16"
-              src="./images/factory-time-logo.png"
-              alt=""
-            />
-            <div class="items-baseline flex flex-col">
-              <span class="font-bold text-3xl text-orange-200">
-                FACTORY TIME
-              </span>
-              <span class="font-bold text-stone-400">
-                Incremental automation game
-              </span>
-            </div>
+        <div class="flex flex-row gap-2 items-center">
+          <img
+            class="object-cover w-16 h-16"
+            src="./brand/factory-time-logo.png"
+            alt=""
+          />
+          <div class="items-baseline flex flex-col">
+            <span class="font-bold text-3xl text-orange-200">
+              FACTORY TIME
+            </span>
+            <span class="font-bold text-stone-400">
+              Incremental automation game
+            </span>
           </div>
+        </div>
 
-          <div class="flex flex-row gap-2 items-center h-full justify-center">
-            <a
-              href="#Home"
-              class="text-xl font-bold text-orange-200 hover:text-orange-300 h-full flex items-center px-2"
-            >
-              <i class="fa-solid fa-home"></i>
-            </a>
-            <a
-              href="#About"
-              class="text-xl font-bold text-orange-200 hover:text-orange-300 h-full flex items-center px-2"
-            >
-              ABOUT
-            </a>
-            <a
-              href="#Media"
-              class="text-xl font-bold text-orange-200 hover:text-orange-300 h-full flex items-center px-2"
-            >
-              MEDIA
-            </a>
-          </div>
+        <div class="flex flex-row gap-2 items-center h-full justify-center">
+          <a
+            href="#Home"
+            class="text-xl font-bold text-orange-200 hover:text-orange-300 h-full flex items-center px-2"
+          >
+            <i class="fa-solid fa-home"></i>
+          </a>
+          <a
+            href="#About"
+            class="text-xl font-bold text-orange-200 hover:text-orange-300 h-full flex items-center px-2"
+          >
+            ABOUT
+          </a>
+          <a
+            href="#Features"
+            class="text-xl font-bold text-orange-200 hover:text-orange-300 h-full flex items-center px-2"
+          >
+            FEATURES
+          </a>
+          <a
+            href="#Media"
+            class="text-xl font-bold text-orange-200 hover:text-orange-300 h-full flex items-center px-2"
+          >
+            MEDIA
+          </a>
+        </div>
 
-          <div class="flex flex-row gap-2">
-            <a
-              href="https://discord.gg/PkyzXzz"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="border border-stone-500 bg-zinc-900 px-4 py-2 font-quattrocento-sans font-bold text-orange-200 outline-none hover:border-orange-300 hover:bg-zinc-800 rounded-md focus:border-orange-300 disabled:text-stone-400"
-            >
-              <i class="fa-brands fa-discord"></i>
-              CONNECT
-            </a>
+        <div class="flex flex-row gap-2">
+          <a
+            href="https://discord.gg/PkyzXzz"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="border border-stone-500 bg-zinc-900 px-4 py-2 font-quattrocento-sans font-bold text-orange-200 outline-none hover:border-orange-300 hover:bg-zinc-800 rounded-md focus:border-orange-300 disabled:text-stone-400"
+          >
+            <i class="fa-brands fa-discord"></i>
+            CONNECT
+          </a>
 
-            <a
-              href="https://deniszholob.itch.io/factory-game"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="border border-stone-500 bg-zinc-900 px-4 py-2 font-quattrocento-sans font-bold text-orange-200 outline-none hover:border-orange-300 hover:bg-zinc-800 rounded-md focus:border-orange-300 disabled:text-stone-400"
-            >
-              <i class="fa-brands fa-itch-io"></i>
-              PLAY NOW
-            </a>
-          </div>
+          <a
+            href="https://deniszholob.itch.io/factory-time"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="border border-stone-500 bg-zinc-900 px-4 py-2 font-quattrocento-sans font-bold text-orange-200 outline-none hover:border-orange-300 hover:bg-zinc-800 rounded-md focus:border-orange-300 disabled:text-stone-400"
+          >
+            <i class="fa-brands fa-itch-io"></i>
+            PLAY NOW
+          </a>
         </div>
       </header>
 
@@ -197,21 +199,21 @@
                 rgba(42, 37, 24, 0.7) 0%,
                 rgba(1, 7, 17, 0.7) 70%
               ),
-              url('./images/factory-time-bg.png');
+              url('./brand/factory-time-bg.png');
           "
-          class="bg-cover bg-center w-full min-h-[70vh] flex flex-col items-center justify-center"
+          class="bg-cover bg-center w-full h-auto 2xl:min-h-[70vh] flex flex-col items-center justify-center"
         >
           <div class="flex flex-col items-center justify-center">
             <img
-              class="max-w-screen-md"
-              src="./images/factory-time-title.png"
+              class="max-w-full lg:max-w-screen-md"
+              src="./brand/factory-time-title.png"
               alt=""
               style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5))"
             />
           </div>
           <div class="flex flex-row items-center justify-center">
             <a
-              href="https://deniszholob.itch.io/factory-game"
+              href="https://deniszholob.itch.io/factory-time"
               target="_blank"
               rel="noopener noreferrer"
               class="border border-stone-500 text-2xl bg-zinc-900 px-4 py-2 font-quattrocento-sans font-bold text-orange-200 outline-none hover:border-orange-300 hover:bg-zinc-800 rounded-md focus:border-orange-300 disabled:text-stone-400"
@@ -224,13 +226,70 @@
 
         <section id="About" class="flex flex-col items-center justify-center">
           <hr class="w-full border-orange-400/50" />
-          <h1 class="text-3xl font-bold text-orange-200 py-4">About</h1>
-          <p>
+          <h1 class="text-3xl font-bold text-orange-200 p-4">About</h1>
+          <p class="text-neutral-100 p-4">
             A game about production inspired by incremental games and automation
             games like Factorio, Satisfactory, etc...
           </p>
+          <p class="text-neutral-400 text-xl p-4">
+            <a
+              href="https://itch.io/post/13886969"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-orange-200 hover:text-orange-300"
+            >
+              "Satisfactory is 3d Factorio and this is 1d Factorio." -
+              dragosd599
+            </a>
+          </p>
+          <p class="p-4">Available for Web, Windows and Linux</p>
+
+          <!-- <hr class="my-4 w-full border-orange-400/50" /> -->
+
           <br />
-          <img
+          <!-- <h2 class="text-xl font-bold text-orange-200">Features</h2> -->
+        </section>
+
+        <section
+          id="Features"
+          class="flex flex-col items-center justify-center bg-black"
+        >
+          <hr class="w-full border-orange-400/50" />
+          <h1 class="text-3xl font-bold text-orange-200 p-4">Features</h1>
+          <div
+            class="flex flex-col p-28 bg-neutral-950 w-full items-center gap-4"
+          >
+            <h3 class="text-3xl">Production</h3>
+            <p>Gather raw resources, craft items, and build structures.</p>
+            <img src="media/factory-time_production.png" alt="" />
+          </div>
+          <div
+            class="flex flex-col p-28 bg-neutral-900 w-full items-center gap-4"
+          >
+            <h3 class="text-3xl">Automation</h3>
+            <p>Automate repetitive tasks and massively increase production.</p>
+            <img src="media/factory-time_automation.png" alt="" />
+          </div>
+          <div
+            class="flex flex-col p-28 bg-neutral-950 w-full items-center gap-4"
+          >
+            <h3 class="text-3xl">Research</h3>
+            <p>Discover new technologies and upgrade your production.</p>
+            <img src="media/factory-time_research.png" alt="" />
+          </div>
+          <!-- <div
+            class="flex flex-col p-28 bg-neutral-950 w-full items-center gap-4">
+            <h3>Upgrades</h3>
+            <img src="media/factory-time_upgrades.png" alt="" />
+          </div> -->
+
+          <br />
+          <img src="media/factory-time_screen-inventory.png" alt="" />
+          <img src="media/factory-time_screen-research.png" alt="" />
+          <img src="media/factory-time_screen-mode-select.png" alt="" />
+          <img src="media/factory-time_screen-main-menu.png" alt="" />
+
+          <!-- <img
             src="https://img.itch.zone/aW1hZ2UvMzgyMzExOC8yMjc5NzM1Mi5wbmc=/original/nHSEb7.png"
             alt=""
           />
@@ -238,7 +297,7 @@
           <img
             src="https://img.itch.zone/aW1hZ2UvMzgyMzExOC8yMjgwOTM4NS5wbmc=/original/kHCm7y.png"
             alt=""
-          />
+          /> -->
         </section>
 
         <section id="Media" class="flex flex-col items-center justify-center">
