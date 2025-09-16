@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<html
-  class="dark h-full scroll-smooth bg-neutral-700 text-neutral-300"
-  lang="en"
->
+<html class="dark h-full bg-neutral-700 text-neutral-300" lang="en">
   <head>
     <!-- Meta Data -->
     <meta charset="utf-8" />
@@ -120,12 +117,12 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
 
-  <body class="flex bg-black h-screen w-screen flex-col overflow-hidden">
+  <body class="flex bg-black h-screen w-screen flex-col">
     <div class="flex flex-col h-screen">
       <header
         class="bg-stone-950 flex flex-col lg:flex-row gap-4 items-center justify-between w-full px-4 py-2"
       >
-        <div class="flex flex-row gap-2 items-center">
+        <a class="flex flex-row gap-2 items-center" href="">
           <img
             class="object-cover w-16 h-16"
             src="./brand/factory-time-logo.png"
@@ -139,7 +136,7 @@
               Incremental automation game
             </span>
           </div>
-        </div>
+        </a>
 
         <div class="flex flex-row gap-2 items-center h-full justify-center">
           <a
@@ -180,18 +177,30 @@
           </a>
 
           <a
+            href="https://store.steampowered.com/app/4021110/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="border border-stone-500 bg-zinc-900 px-4 py-2 font-quattrocento-sans font-bold text-orange-200 outline-none hover:border-orange-300 hover:bg-zinc-800 rounded-md focus:border-orange-300 disabled:text-stone-400"
+          >
+            <i class="fa-brands fa-steam"></i>
+            WISHLIST ON STEAM
+          </a>
+
+          <a
             href="https://deniszholob.itch.io/factory-time"
             target="_blank"
             rel="noopener noreferrer"
             class="border border-stone-500 bg-zinc-900 px-4 py-2 font-quattrocento-sans font-bold text-orange-200 outline-none hover:border-orange-300 hover:bg-zinc-800 rounded-md focus:border-orange-300 disabled:text-stone-400"
           >
             <i class="fa-brands fa-itch-io"></i>
-            PLAY NOW
+            PLAY BETA
           </a>
         </div>
       </header>
 
-      <main class="bg-stone-800 flex flex-col flex-1 overflow-auto">
+      <main
+        class="bg-stone-800 flex flex-col flex-1 overflow-auto scroll-smooth"
+      >
         <section
           id="Home"
           style="
@@ -211,7 +220,7 @@
               style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5))"
             />
           </div>
-          <div class="flex flex-row items-center justify-center">
+          <div class="flex flex-row items-center justify-center gap-2">
             <a
               href="https://deniszholob.itch.io/factory-time"
               target="_blank"
@@ -219,7 +228,16 @@
               class="border border-stone-500 text-2xl bg-zinc-900 px-4 py-2 font-quattrocento-sans font-bold text-orange-200 outline-none hover:border-orange-300 hover:bg-zinc-800 rounded-md focus:border-orange-300 disabled:text-stone-400"
             >
               <i class="fa-brands fa-itch-io"></i>
-              PLAY
+              PLAY BETA
+            </a>
+            <a
+              href="https://store.steampowered.com/app/4021110/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="border border-stone-500 text-2xl bg-zinc-900 px-4 py-2 font-quattrocento-sans font-bold text-orange-200 outline-none hover:border-orange-300 hover:bg-zinc-800 rounded-md focus:border-orange-300 disabled:text-stone-400"
+            >
+              <i class="fa-brands fa-steam"></i>
+              WISHLIST ON STEAM
             </a>
           </div>
         </section>
@@ -228,8 +246,13 @@
           <hr class="w-full border-orange-400/50" />
           <h1 class="text-3xl font-bold text-orange-200 p-4">About</h1>
           <p class="text-neutral-100 p-4">
-            A game about production inspired by incremental games and automation
-            games like Factorio, Satisfactory, etc...
+            2D automation game set in a time loop.
+            <br />Only time anchored factories and knowledge can be carried
+            through multiple loops, until a way to escape time is discovered.
+            <br />
+            Manage factories, production, research and bonuses to reach the end.
+            <br />What will you carry an what will you leave to the mercy of
+            time?
           </p>
           <p class="text-neutral-400 text-xl p-4">
             <a
@@ -256,13 +279,21 @@
         >
           <hr class="w-full border-orange-400/50" />
           <h1 class="text-3xl font-bold text-orange-200 p-4">Features</h1>
+
           <div
             class="flex flex-col p-28 bg-neutral-950 w-full items-center gap-4"
           >
             <h3 class="text-3xl">Production</h3>
             <p>Gather raw resources, craft items, and build structures.</p>
-            <img src="media/factory-time_production.png" alt="" />
+            <div class="flex flex-row gap-2 items-center">
+              <img src="media/factory-time_production-raw.png" alt="" />
+              <i class="fa-solid fa-arrow-right text-3xl"></i>
+              <img src="media/factory-time_production.png" alt="" />
+              <i class="fa-solid fa-arrow-right text-3xl"></i>
+              <img src="media/factory-time_production-factory.png" alt="" />
+            </div>
           </div>
+
           <div
             class="flex flex-col p-28 bg-neutral-900 w-full items-center gap-4"
           >
@@ -270,6 +301,7 @@
             <p>Automate repetitive tasks and massively increase production.</p>
             <img src="media/factory-time_automation.png" alt="" />
           </div>
+
           <div
             class="flex flex-col p-28 bg-neutral-950 w-full items-center gap-4"
           >
@@ -277,11 +309,14 @@
             <p>Discover new technologies and upgrade your production.</p>
             <img src="media/factory-time_research.png" alt="" />
           </div>
-          <!-- <div
-            class="flex flex-col p-28 bg-neutral-950 w-full items-center gap-4">
-            <h3>Upgrades</h3>
+
+          <div
+            class="flex flex-col p-28 bg-neutral-900 w-full items-center gap-4"
+          >
+            <h3 class="text-3xl">Upgrades</h3>
+            <p>Unlock various upgrades to improve your production.</p>
             <img src="media/factory-time_upgrades.png" alt="" />
-          </div> -->
+          </div>
 
           <br />
           <img src="media/factory-time_screen-inventory.png" alt="" />
