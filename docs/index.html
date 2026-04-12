@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="dark h-full bg-neutral-700 text-neutral-300" lang="en">
   <head>
     <!-- Meta Data -->
@@ -120,12 +120,12 @@
   <body class="flex bg-black h-screen w-screen flex-col">
     <div class="flex flex-col h-screen">
       <header
-        class="bg-stone-950 flex flex-col lg:flex-row gap-4 items-center justify-between w-full px-4 py-2"
+        class="bg-stone-950 flex flex-col xl:flex-row gap-4 items-center justify-between w-full px-4 py-2"
       >
         <a class="flex flex-row gap-2 items-center" href="">
           <img
             class="object-cover w-16 h-16"
-            src="./brand/factory-time-logo.png"
+            src="./favicon-96x96.png"
             alt=""
           />
           <div class="items-baseline flex flex-col">
@@ -133,7 +133,7 @@
               FACTORY TIME
             </span>
             <span class="font-bold text-stone-400">
-              Incremental automation game
+              Incremental Automation Game
             </span>
           </div>
         </a>
@@ -158,10 +158,22 @@
             FEATURES
           </a>
           <a
+            href="#Screenshots"
+            class="text-xl font-bold text-orange-200 hover:text-orange-300 h-full flex items-center px-2"
+          >
+            SCREENSHOTS
+          </a>
+          <a
             href="#Media"
             class="text-xl font-bold text-orange-200 hover:text-orange-300 h-full flex items-center px-2"
           >
             MEDIA
+          </a>
+          <a
+            href="#Presskit"
+            class="text-xl font-bold text-orange-200 hover:text-orange-300 h-full flex items-center px-2"
+          >
+            PRESSKIT
           </a>
         </div>
 
@@ -183,10 +195,10 @@
             class="border border-stone-500 bg-zinc-900 px-4 py-2 font-quattrocento-sans font-bold text-orange-200 outline-none hover:border-orange-300 hover:bg-zinc-800 rounded-md focus:border-orange-300 disabled:text-stone-400"
           >
             <i class="fa-brands fa-steam"></i>
-            WISHLIST ON STEAM
+            PLAY DEMO & WISHLIST ON STEAM
           </a>
 
-          <a
+          <!-- <a
             href="https://deniszholob.itch.io/factory-time"
             target="_blank"
             rel="noopener noreferrer"
@@ -194,7 +206,7 @@
           >
             <i class="fa-brands fa-itch-io"></i>
             PLAY BETA
-          </a>
+          </a> -->
         </div>
       </header>
 
@@ -204,24 +216,25 @@
         <section
           id="Home"
           style="
-            background-image: linear-gradient(
+            background-image:
+              linear-gradient(
                 rgba(42, 37, 24, 0.7) 0%,
                 rgba(1, 7, 17, 0.7) 70%
               ),
-              url('./brand/factory-time-bg.png');
+              url(&quot;./brand/factory-time-bg.png&quot;);
           "
-          class="bg-cover bg-center w-full h-auto 2xl:min-h-[70vh] flex flex-col items-center justify-center"
+          class="bg-cover bg-center w-full h-auto 2xl:min-h-[70vh] flex flex-col items-center justify-center py-2"
         >
           <div class="flex flex-col items-center justify-center">
             <img
               class="max-w-full lg:max-w-screen-md"
-              src="./brand/factory-time-title.png"
+              src="./brand/ft-text-2x.png"
               alt=""
               style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5))"
             />
           </div>
           <div class="flex flex-row items-center justify-center gap-2">
-            <a
+            <!-- <a
               href="https://deniszholob.itch.io/factory-time"
               target="_blank"
               rel="noopener noreferrer"
@@ -229,7 +242,7 @@
             >
               <i class="fa-brands fa-itch-io"></i>
               PLAY BETA
-            </a>
+            </a> -->
             <a
               href="https://store.steampowered.com/app/4021110/"
               target="_blank"
@@ -237,7 +250,7 @@
               class="border border-stone-500 text-2xl bg-zinc-900 px-4 py-2 font-quattrocento-sans font-bold text-orange-200 outline-none hover:border-orange-300 hover:bg-zinc-800 rounded-md focus:border-orange-300 disabled:text-stone-400"
             >
               <i class="fa-brands fa-steam"></i>
-              WISHLIST ON STEAM
+              PLAY DEMO & WISHLIST ON STEAM
             </a>
           </div>
         </section>
@@ -245,27 +258,39 @@
         <section id="About" class="flex flex-col items-center justify-center">
           <hr class="w-full border-orange-400/50" />
           <h1 class="text-3xl font-bold text-orange-200 p-4">About</h1>
-          <p class="text-neutral-100 p-4">
-            2D automation game set in a time loop.
-            <br />Only time anchored factories and knowledge can be carried
-            through multiple loops, until a way to escape time is discovered.
-            <br />
-            Manage factories, production, research and bonuses to reach the end.
-            <br />What will you carry an what will you leave to the mercy of
-            time?
-          </p>
-          <p class="text-neutral-400 text-xl p-4">
-            <a
-              href="https://itch.io/post/13886969"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-orange-200 hover:text-orange-300"
-            >
-              "Satisfactory is 3d Factorio and this is 1d Factorio." -
-              dragosd599
-            </a>
-          </p>
-          <p class="p-4">Available for Web, Windows and Linux</p>
+          <div class="flex flex-col sm:flex-row items-center">
+            <img
+              src="brand/ft-robot.png"
+              alt="Factory Time Robot"
+              class="h-[200px] w-auto"
+            />
+            <div>
+              <p class="text-2xl p-4">
+                A factory automation incremental game at the end of the
+                universe.
+              </p>
+              <p class="text-neutral-100 p-4">
+                <br />Build the last factory in the final pocket of usable
+                energy before the heat death of the universe.
+                <br />
+                Build production chains, automate everything, and get powerful
+                upgrades.
+                <br />Create, share, and play custom scenarios.
+              </p>
+              <p class="text-neutral-400 text-xl p-4">
+                <a
+                  href="https://itch.io/post/13886969"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-orange-200 hover:text-orange-300"
+                >
+                  "Satisfactory is 3d Factorio and this is 1d Factorio." -
+                  dragosd599
+                </a>
+              </p>
+              <!-- <p class="p-4">Available for Web, Windows and Linux</p> -->
+            </div>
+          </div>
 
           <!-- <hr class="my-4 w-full border-orange-400/50" /> -->
 
@@ -286,11 +311,11 @@
             <h3 class="text-3xl">Production</h3>
             <p>Gather raw resources, craft items, and build structures.</p>
             <div class="flex flex-row gap-2 items-center">
-              <img src="media/factory-time_production-raw.png" alt="" />
+              <img src="media/ft-matter.png" alt="" />
               <i class="fa-solid fa-arrow-right text-3xl"></i>
-              <img src="media/factory-time_production.png" alt="" />
+              <img src="media/ft-circuit.png" alt="" />
               <i class="fa-solid fa-arrow-right text-3xl"></i>
-              <img src="media/factory-time_production-factory.png" alt="" />
+              <img src="media/ft-generator.png" alt="" />
             </div>
           </div>
 
@@ -299,7 +324,7 @@
           >
             <h3 class="text-3xl">Automation</h3>
             <p>Automate repetitive tasks and massively increase production.</p>
-            <img src="media/factory-time_automation.png" alt="" />
+            <img src="media/ft-chronoforge-recipe.png" alt="" />
           </div>
 
           <div
@@ -307,7 +332,7 @@
           >
             <h3 class="text-3xl">Research</h3>
             <p>Discover new technologies and upgrade your production.</p>
-            <img src="media/factory-time_research.png" alt="" />
+            <img src="media/ft-tech-cronoforge.png" alt="" />
           </div>
 
           <div
@@ -315,14 +340,9 @@
           >
             <h3 class="text-3xl">Upgrades</h3>
             <p>Unlock various upgrades to improve your production.</p>
-            <img src="media/factory-time_upgrades.png" alt="" />
+            <img src="media/ft-bonus-salvage-recipe.png" alt="" />
+            <img src="media/ft-global-bonuses.png" alt="" />
           </div>
-
-          <br />
-          <img src="media/factory-time_screen-inventory.png" alt="" />
-          <img src="media/factory-time_screen-research.png" alt="" />
-          <img src="media/factory-time_screen-mode-select.png" alt="" />
-          <img src="media/factory-time_screen-main-menu.png" alt="" />
 
           <!-- <img
             src="https://img.itch.zone/aW1hZ2UvMzgyMzExOC8yMjc5NzM1Mi5wbmc=/original/nHSEb7.png"
@@ -335,10 +355,66 @@
           /> -->
         </section>
 
-        <section id="Media" class="flex flex-col items-center justify-center">
+        <section
+          id="Screenshots"
+          class="flex flex-col items-center justify-center"
+        >
+          <hr class="w-full border-orange-400/50" />
+          <h1 class="text-3xl font-bold text-orange-200 py-4">Screenshots</h1>
+
+          <div class="grid grid-cols-2 gap-2">
+            <img src="media/screens/ft-inventory-factory.png" alt="" />
+            <img src="media/screens/ft-research-screen.png" alt="" />
+            <img src="media/screens/ft-bonus-screen.png" alt="" />
+            <img src="media/screens/ft-new-game.png" alt="" />
+            <img src="media/screens/ft-prestige.png" alt="" />
+            <img src="media/screens/ft-editor.png" alt="" />
+          </div>
+        </section>
+
+        <section
+          id="Media"
+          class="flex flex-col items-center justify-center pb-4"
+        >
           <hr class="w-full border-orange-400/50" />
           <h1 class="text-3xl font-bold text-orange-200 py-4">Media</h1>
-          <a
+
+          <div class="grid grid-cols-2 gap-2">
+            <iframe
+              src="https://www.youtube.com/embed/FQIiOtefRmQ"
+              title="Factory Time Developer Gameplay - Factory Automation Incremental"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+
+            <iframe
+              src="https://www.youtube.com/embed/BlRtv7Ypmwk"
+              title="Good Games 200 - Factory Game"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <!-- <a
             href="https://www.youtube.com/watch?v=BlRtv7Ypmwk"
             target="_blank"
             rel="noopener noreferrer"
@@ -355,8 +431,27 @@
               src="https://i3.ytimg.com/vi/BlRtv7Ypmwk/maxresdefault.jpg"
               alt=""
             />
-          </a>
+          </a> -->
         </section>
+
+        <section
+          id="Presskit"
+          class="flex flex-col items-center justify-center pb-4"
+        >
+          <hr class="w-full border-orange-400/50" />
+          <h1 class="text-3xl font-bold text-orange-200 py-4">Presskit</h1>
+
+          <div class="grid grid-cols-4 gap-2 max-w-screen-md">
+            <img src="brand/ft-text-2x.png" alt="Factory Time Logo" />
+            <img src="web-app-manifest-512x512.png" alt="Factory Time Icon" />
+            <img src="brand/ft-robot.png" alt="Factory Time Robot" />
+            <img
+              src="brand/factory-time-bg.png"
+              alt="Factory Time Background"
+            />
+          </div>
+        </section>
+
         <br />
       </main>
 
