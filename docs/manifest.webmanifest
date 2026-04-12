@@ -1,21 +1,61 @@
 {
   "name": "Factory Time",
   "short_name": "Factory Time",
+  "description": "A factory automation incremental game at the end of the universe.",
+  "theme_color": "#281607",
+  "background_color": "#281607",
+  "display": "standalone",
+  "scope": "./",
+  "start_url": "./?utm_source=homescreen",
+  "dir": "ltr",
+  "lang": "en-US",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false,
+  "screenshots": [
+    {
+      "src": "brand/factory-time_store-capsule-vertical-v2.png",
+      "sizes": "748x896",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Factory Time Mobile",
+      "description": "A factory automation incremental game at the end of the universe."
+    },
+    {
+      "src": "brand/factory-time_store-capsule-main-v2.png",
+      "sizes": "1232x706",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Factory Time Desktop",
+      "description": "A factory automation incremental game at the end of the universe."
+    }
+  ],
   "icons": [
     {
-      "src": "./web-app-manifest-192x192.png",
+      "src": "web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "./web-app-manifest-512x512.png",
+      "src": "web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48",
+      "type": "image/icon"
     }
-  ],
-  "theme_color": "#281607",
-  "background_color": "#281607",
-  "display": "standalone"
+  ]
 }
