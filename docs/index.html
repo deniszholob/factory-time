@@ -1,604 +1,370 @@
 <!doctype html>
 <html class="dark h-full bg-neutral-700 text-neutral-300" lang="en">
-  <head>
-    <!-- Meta Data -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Denis Zholob" />
-    <meta name="keywords" content="Denis, Zholob" />
-    <meta name="title" content="Factory Time" />
-    <meta
-      name="description"
-      content="A factory automation incremental game at the end of the universe."
-    />
 
-    <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="Factory Time" />
-    <meta
-      itemprop="description"
-      content="A factory automation incremental game at the end of the universe."
-    />
-    <meta
-      itemprop="image"
-      content="https://factorytimegame.com/assets/screenshots/screenshot_1280x720.png"
-    />
+<head>
+  <!-- Meta Data -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Denis Zholob" />
+  <meta name="keywords" content="Denis, Zholob" />
+  <meta name="title" content="Factory Time" />
+  <meta name="description" content="A factory automation incremental game at the end of the universe." />
 
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://factorytimegame.com/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Factory Time" />
-    <meta
-      property="og:description"
-      content="A factory automation incremental game at the end of the universe."
-    />
-    <meta
-      property="og:image"
-      content="https://factorytimegame.com/assets/screenshots/screenshot_1280x720.png"
-    />
-    <meta property="og:author" content="Denis Zholob" />
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="Factory Time" />
+  <meta itemprop="description" content="A factory automation incremental game at the end of the universe." />
+  <meta itemprop="image" content="https://factorytimegame.com/assets/screenshots/screenshot_1280x720.png" />
 
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Factory Time" />
-    <meta
-      name="twitter:description"
-      content="A factory automation incremental game at the end of the universe."
-    />
-    <meta
-      name="twitter:image"
-      content="https://factorytimegame.com/assets/screenshots/screenshot_1280x720.png"
-    />
-    <meta name="twitter:site" content="@deniszholob" />
-    <meta name="twitter:creator" content="@deniszholob" />
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://factorytimegame.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Factory Time" />
+  <meta property="og:description" content="A factory automation incremental game at the end of the universe." />
+  <meta property="og:image" content="https://factorytimegame.com/assets/screenshots/screenshot_1280x720.png" />
+  <meta property="og:author" content="Denis Zholob" />
 
-    <!-- Title/Icon -->
-    <title>Factory Time</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="apple-touch-startup-image" href="assets/icons/splash.jpg" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#ffffff" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <base href="./" />
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Factory Time" />
+  <meta name="twitter:description" content="A factory automation incremental game at the end of the universe." />
+  <meta name="twitter:image" content="https://factorytimegame.com/assets/screenshots/screenshot_1280x720.png" />
+  <meta name="twitter:site" content="@deniszholob" />
+  <meta name="twitter:creator" content="@deniszholob" />
 
-    <!-- PWA -->
-    <link rel="manifest" href="manifest.webmanifest" />
-    <meta name="theme-color" content="#ffffff" />
+  <!-- Title/Icon -->
+  <title>Factory Time</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="apple-touch-startup-image" href="assets/icons/splash.jpg" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#ffffff" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <base href="./" />
 
-    <!-- Meta Tags Generated via http://heymeta.com -->
-    <!-- Icons generated with https://realfavicongenerator.net/ -->
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0e0e10" />
 
-    <!-- Prefetch/Preconnect -->
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-      crossorigin="anonymous"
-    />
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com/s/" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com/s/"
-      crossorigin="anonymous"
-    />
-    <link rel="dns-prefetch" href="https://use.fontawesome.com" />
-    <link
-      rel="preconnect"
-      href="https://use.fontawesome.com"
-      crossorigin="anonymous"
-    />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&family=Roboto+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
 
-    <!-- Bootstrap -->
-    <!-- <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"> -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28080172-12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    <!-- Fonts -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?"> -->
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v6.6.0/js/all.js"
-      integrity="sha384-dgEl3vRKux81M373f/TdgoDTV5oZj+yjHrr/1qR5b4btG5q63kYS62t5kod+7Q6v"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-      rel="stylesheet"
-    />
+    gtag("config", "UA-28080172-12");
+  </script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-28080172-12"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          heading: '"Rajdhani", system-ui, sans-serif',
+          mono: '"Roboto Mono", monospace',
+          sans: '"Inter", "Noto Sans SC", system-ui, sans-serif',
+        },
+        extend: {
+          colors: {
+            "sand-50": "#faf9f5",
+            "sand-100": "#f3f0e5",
+            "sand-200": "#e4dcc2",
+            "sand-300": "#d2c29c",
+            "sand-400": "#bfa976",
+            "sand-500": "#a89156",
+            "sand-600": "#8c7744",
+            "sand-700": "#6e5e37",
+            "sand-800": "#54472b",
+            "sand-900": "#3b321f",
+            "sand-950": "#262015",
+            "gold-50": "#fdfaf4",
+            "gold-100": "#fbf2df",
+            "gold-200": "#f7e2b8",
+            "gold-300": "#f2cd88",
+            "gold-400": "#e8b857",
+            "gold-500": "#d79f2b",
+            "gold-600": "#b9841f",
+            "gold-700": "#94651a",
+            "gold-800": "#6e4b18",
+            "gold-900": "#4c3413",
+            "energy-400": "#ff8c5a",
+            "energy-500": "#ff6b35",
+            "energy-600": "#e8531f",
+            "energy-700": "#c43d0f",
+            "tech-400": "#9b7be0",
+            "tech-500": "#7b56c6",
+            "tech-600": "#6341ab",
+            "entropy-500": "#8b0000",
+            "stable-600": "#2b7fd9",
+            "void-800": "#18181b",
+            "void-900": "#0e0e10",
+            "void-950": "#050505",
+          },
+          boxShadow: {
+            solid: "0 2px 4px rgba(20, 20, 20, 0.7)",
+            "solid-lg": "0 4px 8px rgba(20, 20, 20, 0.55)",
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="./style.css" />
+</head>
 
-      gtag("config", "UA-28080172-12");
-    </script>
-
-    <!-- Stylesheets -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <style type="text/tailwindcss">
-      @theme {
-        --font-*: initial;
-        --font-sans: Inter, Noto Sans SC, system-ui, sans-serif;
-        --font-heading:
-          "Roboto Condensed", Inter, Noto Sans SC, system-ui, sans-serif;
-        --font-mono: "Roboto Mono", Noto Sans SC, monospace;
-        --font-numeric:
-          "Roboto Condensed", Inter, Noto Sans SC, system-ui, sans-serif;
-
-        --font-weight-*: initial;
-        --font-weight-regular: 400;
-        --font-weight-bold: 700;
-
-        --color-sand-50: #faf9f5;
-        --color-sand-100: #f3f0e5;
-        --color-sand-200: #e4dcc2;
-        --color-sand-300: #d2c29c;
-        --color-sand-400: #bfa976;
-        --color-sand-500: #a89156;
-        --color-sand-600: #8c7744;
-        --color-sand-700: #6e5e37;
-        --color-sand-800: #54472b;
-        --color-sand-900: #3b321f;
-        --color-sand-950: #262015;
-      }
-    </style>
-    <!-- <link rel="stylesheet" href="./style.css" /> -->
-  </head>
-
-  <body class="flex bg-black h-screen w-screen flex-col">
-    <div class="flex flex-col h-screen">
-      <header
-        class="bg-stone-950 flex flex-col xl:flex-row gap-4 items-center justify-between w-full px-4 py-2"
-      >
-        <a class="flex flex-row gap-2 items-center" href="">
-          <img
-            class="object-cover w-16 h-16"
-            src="./favicon-96x96.png"
-            alt=""
-          />
-          <div class="items-baseline flex flex-col">
-            <span class="font-bold text-3xl text-orange-200">
-              FACTORY TIME
-            </span>
-            <span class="font-bold text-stone-400">
-              Incremental Automation Game
-            </span>
+<body class="bg-void-950 text-sand-100">
+  <div class="relative flex min-h-screen flex-col">
+    <header class="fixed inset-x-0 top-0 z-50 border-b border-sand-700/30 bg-void-950/95 shadow-solid-lg">
+      <div
+        class="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-4 px-4 py-4 sm:px-6 xl:flex-row">
+        <a class="group flex flex-row items-center gap-3" href="#Home">
+          <img class="h-12 w-12 object-cover transition-transform group-hover:scale-105" src="./favicon-96x96.png"
+            alt="Factory Time Logo" />
+          <div class="flex flex-col items-baseline">
+            <span
+              class="font-heading text-2xl font-bold tracking-[0.18em] text-sand-100 transition-colors group-hover:text-gold-300">FACTORY
+              TIME</span>
+            <span class="font-sans text-xs font-medium uppercase tracking-[0.18em] text-sand-500">Incremental Automation
+              Game</span>
           </div>
         </a>
 
-        <div class="flex flex-row gap-2 items-center h-full justify-center">
-          <a
-            href="#Home"
-            class="text-xl font-bold text-orange-200 hover:text-orange-300 h-full flex items-center px-2"
-          >
-            <i class="fa-solid fa-home"></i>
-          </a>
-          <a
-            href="#About"
-            class="text-xl font-bold text-orange-200 hover:text-orange-300 h-full flex items-center px-2"
-          >
-            ABOUT
-          </a>
-          <a
-            href="#Features"
-            class="text-xl font-bold text-orange-200 hover:text-orange-300 h-full flex items-center px-2"
-          >
-            FEATURES
-          </a>
-          <a
-            href="#Screenshots"
-            class="text-xl font-bold text-orange-200 hover:text-orange-300 h-full flex items-center px-2"
-          >
-            SCREENSHOTS
-          </a>
-          <a
-            href="#Media"
-            class="text-xl font-bold text-orange-200 hover:text-orange-300 h-full flex items-center px-2"
-          >
-            MEDIA
-          </a>
-          <a
-            href="#Presskit"
-            class="text-xl font-bold text-orange-200 hover:text-orange-300 h-full flex items-center px-2"
-          >
-            PRESSKIT
-          </a>
+        <nav id="site-nav" class="flex flex-row flex-wrap items-center justify-center gap-1"></nav>
+        <div id="header-actions" class="flex flex-row gap-2"></div>
+      </div>
+    </header>
+
+    <main class="flex-1 scroll-smooth pt-18">
+      <section id="Home"
+        class="hero-bg relative flex  h-auto 2xl:min-h-[70vh] pt-[250px] xl:pt-[80px] scroll-mt-18 flex-col items-center justify-center overflow-hidden px-4 py-20">
+        <div class="relative z-10 flex max-w-7xl flex-col items-center justify-center gap-8">
+          <img class="w-full max-w-full" src="./brand/ft-text-2x.png" alt="Factory Time Logo" />
+
+          <div id="hero-actions" class="flex flex-col gap-4 sm:flex-row"></div>
         </div>
+      </section>
 
-        <div class="flex flex-row gap-2">
-          <a
-            href="https://discord.gg/PkyzXzz"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="border border-stone-500 bg-zinc-900 px-4 py-2 font-quattrocento-sans font-bold text-orange-200 outline-none hover:border-orange-300 hover:bg-zinc-800 rounded-md focus:border-orange-300 disabled:text-stone-400"
-          >
-            <i class="fa-brands fa-discord"></i>
-            CONNECT
-          </a>
+      <section id="About">
+        <div class="section-panel section-panel-gold relative scroll-mt-28 px-4 py-24 sm:scroll-mt-32">
+          <div class="mx-auto max-w-6xl">
+            <div class="flex flex-col items-center gap-8 lg:flex-row lg:gap-16">
+              <div class="flex flex-shrink-0 items-center justify-center lg:w-1/3">
+                <img src="brand/ft-robot.png" alt="Factory Time Robot Character" class="h-64 w-auto lg:h-80"
+                  loading="lazy" />
+              </div>
 
-          <a
-            href="https://store.steampowered.com/app/4021110/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="border border-stone-500 bg-zinc-900 px-4 py-2 font-quattrocento-sans font-bold text-orange-200 outline-none hover:border-orange-300 hover:bg-zinc-800 rounded-md focus:border-orange-300 disabled:text-stone-400"
-          >
-            <i class="fa-brands fa-steam"></i>
-            PLAY DEMO & WISHLIST ON STEAM
-          </a>
+              <div class="lg:w-2/3">
+                <h1 class="mb-6 font-heading text-4xl font-bold leading-tight text-sand-100 lg:text-5xl">
+                  Build, Automate, Transcend
+                </h1>
 
-          <!-- <a
-            href="https://deniszholob.itch.io/factory-time"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="border border-stone-500 bg-zinc-900 px-4 py-2 font-quattrocento-sans font-bold text-orange-200 outline-none hover:border-orange-300 hover:bg-zinc-800 rounded-md focus:border-orange-300 disabled:text-stone-400"
-          >
-            <i class="fa-brands fa-itch-io"></i>
-            PLAY BETA
-          </a> -->
-        </div>
-      </header>
+                <p class="text-sand-300">
+                  Build the last factory in the final pocket of usable energy
+                  before the heat death of the universe.
+                </p>
 
-      <main
-        class="bg-stone-800 flex flex-col flex-1 overflow-auto scroll-smooth"
-      >
-        <section
-          id="Home"
-          style="
-            background-image:
-              linear-gradient(
-                rgba(42, 37, 24, 0.7) 0%,
-                rgba(1, 7, 17, 0.7) 70%
-              ),
-              url(&quot;./brand/factory-time-bg.png&quot;);
-          "
-          class="bg-cover bg-center w-full h-auto 2xl:min-h-[70vh] flex flex-col items-center justify-center py-2"
-        >
-          <div class="flex flex-col items-center justify-center">
-            <img
-              class="max-w-full lg:max-w-screen-md"
-              src="./brand/ft-text-2x.png"
-              alt=""
-              style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5))"
-            />
-          </div>
-          <div class="flex flex-row items-center justify-center gap-2">
-            <!-- <a
-              href="https://deniszholob.itch.io/factory-time"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="border border-stone-500 text-2xl bg-zinc-900 px-4 py-2 font-quattrocento-sans font-bold text-orange-200 outline-none hover:border-orange-300 hover:bg-zinc-800 rounded-md focus:border-orange-300 disabled:text-stone-400"
-            >
-              <i class="fa-brands fa-itch-io"></i>
-              PLAY BETA
-            </a> -->
-            <a
-              href="https://store.steampowered.com/app/4021110/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="border border-stone-500 text-2xl bg-zinc-900 px-4 py-2 font-quattrocento-sans font-bold text-orange-200 outline-none hover:border-orange-300 hover:bg-zinc-800 rounded-md focus:border-orange-300 disabled:text-stone-400"
-            >
-              <i class="fa-brands fa-steam"></i>
-              PLAY DEMO & WISHLIST ON STEAM
-            </a>
-          </div>
-        </section>
+                <div id="about-points" class="my-8 flex flex-col gap-4 border-t border-b border-sand-700/30 py-8"></div>
 
-        <section id="About" class="flex flex-col items-center justify-center">
-          <hr class="w-full border-orange-400/50" />
-          <h1 class="text-3xl font-bold text-orange-200 p-4">About</h1>
-          <div class="flex flex-col sm:flex-row items-center">
-            <img
-              src="brand/ft-robot.png"
-              alt="Factory Time Robot"
-              class="h-[200px] w-auto"
-            />
-            <div>
-              <p class="text-2xl p-4">
-                A factory automation incremental game at the end of the
-                universe.
-              </p>
-              <p class="text-neutral-100 p-4">
-                <br />Build the last factory in the final pocket of usable
-                energy before the heat death of the universe.
-                <br />
-                Build production chains, automate everything, and get powerful
-                upgrades.
-                <br />Create, share, and play custom scenarios.
-              </p>
-              <p class="text-neutral-400 text-xl p-4">
-                <a
-                  href="https://itch.io/post/13886969"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-orange-200 hover:text-orange-300"
-                >
-                  "Satisfactory is 3d Factorio and this is 1d Factorio." -
-                  dragosd599
-                </a>
-              </p>
-              <!-- <p class="p-4">Available for Web, Windows and Linux</p> -->
+                <p class="text-neutral-400 text-xl">
+                  <a href="https://itch.io/post/13886969" target="_blank" rel="noopener noreferrer"
+                    class="text-orange-200 hover:text-orange-300">
+                    "Satisfactory is 3d Factorio and this is 1d Factorio." -
+                    dragosd599
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
+        </div>
 
-          <!-- <hr class="my-4 w-full border-orange-400/50" /> -->
+        <div class="section-panel section-panel-blue relative scroll-mt-28 px-4 py-24 sm:scroll-mt-32">
+          <div class="mx-auto max-w-6xl">
+            <div class="flex flex-col items-center gap-8 lg:flex-row lg:gap-16">
+              <div class="lg:w-2/3">
+                <h1 class="mb-6 font-heading text-4xl font-bold leading-tight text-sand-100 lg:text-5xl">
+                  About
+                </h1>
 
-          <br />
-          <!-- <h2 class="text-xl font-bold text-orange-200">Features</h2> -->
-        </section>
+                <div class="space-y-4 text-sand-300">
+                  <p class="leading-relaxed">
+                    The universe has reached its terminal stage. Stars have
+                    died, black holes are evaporating, and thermodynamic
+                    equilibrium approaches. Your factory exists in a pocket of
+                    remaining usable energy, extracting resources from exotic
+                    sources: Hawking radiation, vacuum fluctuations, quantum
+                    foam, and the last traces of energy in spacetime itself.
+                  </p>
+                  <p class="leading-relaxed">
+                    Build production chains, automate everything, and unlock
+                    powerful technologies. Manage entropy
+                    accumulation—production increases universal entropy,
+                    making future operations harder. Choose when to reset
+                    based on diminishing returns versus prestige rewards.
+                  </p>
+                </div>
+              </div>
 
-        <section
-          id="Features"
-          class="flex flex-col items-center justify-center bg-black"
-        >
-          <hr class="w-full border-orange-400/50" />
-          <h1 class="text-3xl font-bold text-orange-200 p-4">Features</h1>
-
-          <div
-            class="flex flex-col p-28 bg-neutral-950 w-full items-center gap-4"
-          >
-            <h3 class="text-3xl">Production</h3>
-            <p>Gather raw resources, craft items, and build structures.</p>
-            <div class="flex flex-row gap-2 items-center">
-              <img src="media/ft-matter.png" alt="" />
-              <i class="fa-solid fa-arrow-right text-3xl"></i>
-              <img src="media/ft-circuit.png" alt="" />
-              <i class="fa-solid fa-arrow-right text-3xl"></i>
-              <img src="media/ft-generator.png" alt="" />
+              <div class="flex flex-shrink-0 items-center justify-center lg:w-1/3">
+                <img src="brand/ft-chronoforge-off.png" alt="Chronoforge" class="h-64 w-auto lg:h-80" loading="lazy" />
+              </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div
-            class="flex flex-col p-28 bg-neutral-900 w-full items-center gap-4"
-          >
-            <h3 class="text-3xl">Automation</h3>
-            <p>Automate repetitive tasks and massively increase production.</p>
+      <section id="Features">
+        <!-- TODO:  id="features-grid" -->
+        <div
+          class="section-panel section-panel-gold relative scroll-mt-28 px-4 py-24 sm:scroll-mt-32 flex flex-col p-28 w-full items-center gap-4">
+          <h1 class="mb-6 font-heading text-4xl font-bold leading-tight text-sand-100 lg:text-5xl">Production</h3>
+            <p class="text-sand-300">
+              Gather raw resources, craft items, and build structures.
+            </p>
+
+            <img src="media/ft-production-chain.png" alt="" />
+        </div>
+
+        <div
+          class="section-panel section-panel-blue relative scroll-mt-28 px-4 py-24 sm:scroll-mt-32 flex flex-col p-28 w-full items-center gap-4">
+          <h1 class="mb-6 font-heading text-4xl font-bold leading-tight text-sand-100 lg:text-5xl">Automation</h3>
+            <p class="text-sand-300">
+              Automate repetitive tasks and massively increase production.
+            </p>
             <img src="media/ft-chronoforge-recipe.png" alt="" />
-          </div>
+        </div>
 
-          <div
-            class="flex flex-col p-28 bg-neutral-950 w-full items-center gap-4"
-          >
-            <h3 class="text-3xl">Research</h3>
-            <p>Discover new technologies and upgrade your production.</p>
-            <img src="media/ft-tech-cronoforge.png" alt="" />
-          </div>
-
-          <div
-            class="flex flex-col p-28 bg-neutral-900 w-full items-center gap-4"
-          >
-            <h3 class="text-3xl">Upgrades</h3>
-            <p>Unlock various upgrades to improve your production.</p>
+        <div
+          class="section-panel section-panel-gold relative scroll-mt-28 px-4 py-24 sm:scroll-mt-32 flex flex-col p-28 w-full items-center gap-4">
+          <h1 class="mb-6 font-heading text-4xl font-bold leading-tight text-sand-100 lg:text-5xl">Upgrades</h3>
+            <p class="text-sand-300">
+              Unlock various upgrades to improve your production.
+            </p>
             <img src="media/ft-bonus-salvage-recipe.png" alt="" />
             <img src="media/ft-global-bonuses.png" alt="" />
+        </div>
+
+        <div
+          class="section-panel section-panel-blue relative scroll-mt-28 px-4 py-24 sm:scroll-mt-32 flex flex-col p-28 w-full items-center gap-4">
+          <h1 class="mb-6 font-heading text-4xl font-bold leading-tight text-sand-100 lg:text-5xl">Technologies</h3>
+            <p class="text-sand-300">
+              Unlock technologies to improve your production.
+            </p>
+            <img src="media/ft-tech-cronoforge.png" alt="" />
+        </div>
+
+
+      </section>
+
+      <section id="Gallery" class="section-panel section-panel-gold relative scroll-mt-28 px-4 py-24 sm:scroll-mt-32">
+        <div class="mx-auto max-w-6xl">
+          <div class="mb-16 text-center">
+            <h2 class="mb-4 font-heading text-4xl font-bold text-sand-100 lg:text-5xl">
+              In-Game Screenshots
+            </h2>
           </div>
+          <div id="gallery-grid" class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8"></div>
+        </div>
+      </section>
 
-          <!-- <img
-            src="https://img.itch.zone/aW1hZ2UvMzgyMzExOC8yMjc5NzM1Mi5wbmc=/original/nHSEb7.png"
-            alt=""
-          />
-
-          <img
-            src="https://img.itch.zone/aW1hZ2UvMzgyMzExOC8yMjgwOTM4NS5wbmc=/original/kHCm7y.png"
-            alt=""
-          /> -->
-        </section>
-
-        <section
-          id="Screenshots"
-          class="flex flex-col items-center justify-center"
-        >
-          <hr class="w-full border-orange-400/50" />
-          <h1 class="text-3xl font-bold text-orange-200 py-4">Screenshots</h1>
-
-          <div class="grid grid-cols-2 gap-2">
-            <img src="media/screens/ft-inventory-factory.png" alt="" />
-            <img src="media/screens/ft-research-screen.png" alt="" />
-            <img src="media/screens/ft-bonus-screen.png" alt="" />
-            <img src="media/screens/ft-new-game.png" alt="" />
-            <img src="media/screens/ft-prestige.png" alt="" />
-            <img src="media/screens/ft-editor.png" alt="" />
+      <section id="Media" class="section-panel section-panel-blue relative scroll-mt-28 px-4 py-24 sm:scroll-mt-32">
+        <div class="mx-auto max-w-6xl">
+          <div class="mb-16 text-center">
+            <h2 class="mb-4 font-heading text-4xl font-bold text-sand-100 lg:text-5xl">
+              Community & Content
+            </h2>
+            <p class="font-sans text-sand-400">
+              Watch developer playthroughs and community highlights
+            </p>
           </div>
-        </section>
+          <div id="media-grid" class="grid grid-cols-1 gap-8 md:grid-cols-2"></div>
+        </div>
+      </section>
 
-        <section
-          id="Media"
-          class="flex flex-col items-center justify-center pb-4"
-        >
-          <hr class="w-full border-orange-400/50" />
-          <h1 class="text-3xl font-bold text-orange-200 py-4">Media</h1>
-
-          <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8">
-            <iframe
-              src="https://www.youtube.com/embed/FQIiOtefRmQ"
-              title="Factory Time Developer Gameplay - Factory Automation Incremental"
-              frameborder="0"
-              allow="
-                accelerometer;
-                autoplay;
-                clipboard-write;
-                encrypted-media;
-                gyroscope;
-                picture-in-picture;
-                web-share;
-              "
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-              class="w-full aspect-video"
-            ></iframe>
-
-            <iframe
-              src="https://www.youtube.com/embed/CTxNZeGqJBc"
-              title="New Factory Incremental! | Factory Time (demo)"
-              frameborder="0"
-              allow="
-                accelerometer;
-                autoplay;
-                clipboard-write;
-                encrypted-media;
-                gyroscope;
-                picture-in-picture;
-                web-share;
-              "
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-              class="w-full aspect-video"
-            ></iframe>
-
-            <iframe
-              src="https://www.youtube.com/embed/m0xw2ZR2XYw"
-              title="At the End of Everything… We Start Building – Factory Time – First Look"
-              frameborder="0"
-              allow="
-                accelerometer;
-                autoplay;
-                clipboard-write;
-                encrypted-media;
-                gyroscope;
-                picture-in-picture;
-                web-share;
-              "
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-              class="w-full aspect-video"
-            ></iframe>
-
-            <iframe
-              src="https://www.youtube.com/embed/BlRtv7Ypmwk"
-              title="Good Games 200 - Factory Game"
-              frameborder="0"
-              allow="
-                accelerometer;
-                autoplay;
-                clipboard-write;
-                encrypted-media;
-                gyroscope;
-                picture-in-picture;
-                web-share;
-              "
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-              class="w-full aspect-video"
-            ></iframe>
+      <section id="Presskit" class="section-panel section-panel-gold relative scroll-mt-28 px-4 py-24 sm:scroll-mt-32">
+        <div class="mx-auto max-w-7xl">
+          <div class="mb-16 text-center">
+            <h2 class="mb-4 font-heading text-4xl font-bold text-sand-100 lg:text-5xl">
+              Presskit
+            </h2>
+            <p class="font-sans text-sand-400">
+              Official assets for media coverage and promotional use
+            </p>
           </div>
-          <!-- <a
-            href="https://www.youtube.com/watch?v=BlRtv7Ypmwk"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="flex flex-col items-center justify-center"
-          >
-            <span class="font-bold text-xl">
-              <span class="text-stone-400">
-                Good Games 200 - Factory Game
-              </span>
-              <small>by Fort Kenmei</small>
+          <div id="presskit-grid"
+            class="mb-12 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-5 lg:gap-6 justify-center"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-sand-700/30 bg-void-900/90 px-4 py-12">
+      <div class="mx-auto max-w-6xl space-y-6 text-center">
+        <div id="footer-social-links" class="flex justify-center gap-6"></div>
+
+        <div class="border-t border-sand-700/20 pt-4 text-xs text-sand-600">
+          <p class="text-sand-400">
+            <span class="font-heading font-bold text-sand-200">Factory Time</span>
+            <span>
+              © 2024 Denis Zholob. All rights reserved.
             </span>
-            <img
-              class="w-96"
-              src="https://i3.ytimg.com/vi/BlRtv7Ypmwk/maxresdefault.jpg"
-              alt=""
-            />
-          </a> -->
-        </section>
+          </p>
+          <p class="mb-2">
+            Certain icons designed by
+            <a href="https://game-icons.net/" target="_blank" rel="noopener noreferrer"
+              class="text-sand-400 hover:text-gold-400">game-icons.net</a>
+            under
+            <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer"
+              class="text-sand-400 hover:text-gold-400">CC BY 3.0</a>
+            license.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
 
-        <section
-          id="Presskit"
-          class="flex flex-col items-center justify-center pb-4"
-        >
-          <hr class="w-full border-orange-400/50" />
-          <h1 class="text-3xl font-bold text-orange-200 py-4">Presskit</h1>
-
-          <div class="grid grid-cols-4 gap-2 max-w-screen-md">
-            <a
-              href="brand/ft-text-2x.png"
-              download
-              class="group relative rounded-lg overflow-hidden border border-sand-700/30 hover:border-gold-600/50 transition-all bg-sand-900/20 p-4 flex items-center justify-center min-h-32"
-            >
-              <img
-                src="brand/ft-text-2x.png"
-                alt="Factory Time Logo"
-                class="max-w-full max-h-full object-contain"
-              />
-              <div
-                class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
-              >
-                <i class="fa-solid fa-download text-gold-400 text-2xl"></i>
-              </div>
-            </a>
-
-            <a
-              href="web-app-manifest-512x512.png"
-              download
-              class="group relative rounded-lg overflow-hidden border border-sand-700/30 hover:border-gold-600/50 transition-all bg-sand-900/20 p-4 flex items-center justify-center min-h-32"
-            >
-              <img
-                src="web-app-manifest-512x512.png"
-                alt="Factory Time Icon"
-                class="max-w-full max-h-full object-contain"
-              />
-              <div
-                class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
-              >
-                <i class="fa-solid fa-download text-gold-400 text-2xl"></i>
-              </div>
-            </a>
-
-            <a
-              href="brand/ft-robot.png"
-              download
-              class="group relative rounded-lg overflow-hidden border border-sand-700/30 hover:border-gold-600/50 transition-all bg-sand-900/20 p-4 flex items-center justify-center min-h-32"
-            >
-              <img
-                src="brand/ft-robot.png"
-                alt="Factory Time Robot"
-                class="max-w-full max-h-full object-contain"
-              />
-              <div
-                class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
-              >
-                <i class="fa-solid fa-download text-gold-400 text-2xl"></i>
-              </div>
-            </a>
-
-            <a
-              href="brand/factory-time-bg.png"
-              download
-              class="group relative rounded-lg overflow-hidden border border-sand-700/30 hover:border-gold-600/50 transition-all bg-sand-900/20 p-4 flex items-center justify-center min-h-32"
-            >
-              <img
-                src="brand/factory-time-bg.png"
-                alt="Factory Time Background"
-                class="max-w-full max-h-full object-contain"
-              />
-              <div
-                class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
-              >
-                <i class="fa-solid fa-download text-gold-400 text-2xl"></i>
-              </div>
-            </a>
-
-            <!-- <img src="brand/ft-text-2x.png" alt="Factory Time Logo" />
-            <img src="web-app-manifest-512x512.png" alt="Factory Time Icon" />
-            <img src="brand/ft-robot.png" alt="Factory Time Robot" />
-            <img
-              src="brand/factory-time-bg.png"
-              alt="Factory Time Background"
-            /> -->
-          </div>
-        </section>
-
-        <br />
-      </main>
-
-      <!-- <footer class="flex flex-col h-16 bg-stone-950"></footer> -->
+  <div id="lightbox" class="fixed inset-0 z-[999] hidden p-4 md:p-6" role="dialog" aria-modal="true"
+    aria-labelledby="lightbox-caption">
+    <div class="absolute inset-0 bg-black/90" data-lightbox-backdrop></div>
+    <div class="relative mx-auto flex min-h-full w-full max-w-7xl items-center justify-center">
+      <div class="relative flex w-full flex-col gap-4">
+        <div class="flex items-center justify-between gap-4">
+          <p id="lightbox-caption" class="font-heading text-sm uppercase tracking-[0.2em] text-sand-300"></p>
+          <button id="lightbox-close" type="button"
+            class="inline-flex items-center justify-center rounded-md border border-sand-600/60 bg-void-900/90 px-4 py-2 font-heading text-sm font-bold uppercase tracking-[0.14em] text-sand-100 transition-colors hover:border-gold-500/60 hover:text-gold-300"
+            aria-label="Close fullscreen gallery">
+            Close
+          </button>
+        </div>
+        <div class="relative flex items-center justify-center">
+          <button id="lightbox-prev" type="button"
+            class="absolute left-2 top-1/2 z-10 inline-flex -translate-y-1/2 items-center justify-center rounded-md border border-sand-600/60 bg-void-900/90 p-3 transition-colors hover:border-gold-500/60 hover:bg-void-800"
+            aria-label="Show previous screenshot">
+            <img src="game-icons/ui-icons/chevron-left.png" alt="" aria-hidden="true" class="h-5 w-5" />
+          </button>
+          <figure class="overflow-hidden rounded-md border border-sand-700/40 bg-black/40 shadow-solid-lg">
+            <img id="lightbox-image" src="" alt="" class="max-h-[78vh] w-full object-contain" />
+          </figure>
+          <button id="lightbox-next" type="button"
+            class="absolute right-2 top-1/2 z-10 inline-flex -translate-y-1/2 items-center justify-center rounded-md border border-sand-600/60 bg-void-900/90 p-3 transition-colors hover:border-gold-500/60 hover:bg-void-800"
+            aria-label="Show next screenshot">
+            <img src="game-icons/ui-icons/chevron-right.png" alt="" aria-hidden="true" class="h-5 w-5" />
+          </button>
+        </div>
+      </div>
     </div>
-  </body>
+  </div>
+
+  <script defer src="./site-data.js"></script>
+  <script defer src="./site-render.js"></script>
+</body>
+
 </html>
