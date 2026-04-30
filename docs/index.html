@@ -70,10 +70,18 @@
     <!-- Icons generated with https://realfavicongenerator.net/ -->
 
     <!-- Prefetch/Preconnect -->
-    <!-- <link rel="dns-prefetch" href="https://fonts.googleapis.com"> -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous"> -->
-    <!-- <link rel="dns-prefetch" href="https://fonts.gstatic.com/s/"> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com/s/" crossorigin="anonymous"> -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin="anonymous"
+    />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com/s/" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com/s/"
+      crossorigin="anonymous"
+    />
     <link rel="dns-prefetch" href="https://use.fontawesome.com" />
     <link
       rel="preconnect"
@@ -93,6 +101,10 @@
       integrity="sha384-dgEl3vRKux81M373f/TdgoDTV5oZj+yjHrr/1qR5b4btG5q63kYS62t5kod+7Q6v"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -110,8 +122,36 @@
     </script>
 
     <!-- Stylesheets -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      @theme {
+        --font-*: initial;
+        --font-sans: Inter, Noto Sans SC, system-ui, sans-serif;
+        --font-heading:
+          "Roboto Condensed", Inter, Noto Sans SC, system-ui, sans-serif;
+        --font-mono: "Roboto Mono", Noto Sans SC, monospace;
+        --font-numeric:
+          "Roboto Condensed", Inter, Noto Sans SC, system-ui, sans-serif;
+
+        --font-weight-*: initial;
+        --font-weight-regular: 400;
+        --font-weight-bold: 700;
+
+        --color-sand-50: #faf9f5;
+        --color-sand-100: #f3f0e5;
+        --color-sand-200: #e4dcc2;
+        --color-sand-300: #d2c29c;
+        --color-sand-400: #bfa976;
+        --color-sand-500: #a89156;
+        --color-sand-600: #8c7744;
+        --color-sand-700: #6e5e37;
+        --color-sand-800: #54472b;
+        --color-sand-900: #3b321f;
+        --color-sand-950: #262015;
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
   </head>
 
   <body class="flex bg-black h-screen w-screen flex-col">
@@ -375,7 +415,8 @@
         >
           <hr class="w-full border-orange-400/50" />
           <h1 class="text-3xl font-bold text-orange-200 py-4">Media</h1>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8">
             <iframe
               src="https://www.youtube.com/embed/FQIiOtefRmQ"
               title="Factory Time Developer Gameplay - Factory Automation Incremental"
@@ -476,13 +517,81 @@
           <h1 class="text-3xl font-bold text-orange-200 py-4">Presskit</h1>
 
           <div class="grid grid-cols-4 gap-2 max-w-screen-md">
-            <img src="brand/ft-text-2x.png" alt="Factory Time Logo" />
+            <a
+              href="brand/ft-text-2x.png"
+              download
+              class="group relative rounded-lg overflow-hidden border border-sand-700/30 hover:border-gold-600/50 transition-all bg-sand-900/20 p-4 flex items-center justify-center min-h-32"
+            >
+              <img
+                src="brand/ft-text-2x.png"
+                alt="Factory Time Logo"
+                class="max-w-full max-h-full object-contain"
+              />
+              <div
+                class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <i class="fa-solid fa-download text-gold-400 text-2xl"></i>
+              </div>
+            </a>
+
+            <a
+              href="web-app-manifest-512x512.png"
+              download
+              class="group relative rounded-lg overflow-hidden border border-sand-700/30 hover:border-gold-600/50 transition-all bg-sand-900/20 p-4 flex items-center justify-center min-h-32"
+            >
+              <img
+                src="web-app-manifest-512x512.png"
+                alt="Factory Time Icon"
+                class="max-w-full max-h-full object-contain"
+              />
+              <div
+                class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <i class="fa-solid fa-download text-gold-400 text-2xl"></i>
+              </div>
+            </a>
+
+            <a
+              href="brand/ft-robot.png"
+              download
+              class="group relative rounded-lg overflow-hidden border border-sand-700/30 hover:border-gold-600/50 transition-all bg-sand-900/20 p-4 flex items-center justify-center min-h-32"
+            >
+              <img
+                src="brand/ft-robot.png"
+                alt="Factory Time Robot"
+                class="max-w-full max-h-full object-contain"
+              />
+              <div
+                class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <i class="fa-solid fa-download text-gold-400 text-2xl"></i>
+              </div>
+            </a>
+
+            <a
+              href="brand/factory-time-bg.png"
+              download
+              class="group relative rounded-lg overflow-hidden border border-sand-700/30 hover:border-gold-600/50 transition-all bg-sand-900/20 p-4 flex items-center justify-center min-h-32"
+            >
+              <img
+                src="brand/factory-time-bg.png"
+                alt="Factory Time Background"
+                class="max-w-full max-h-full object-contain"
+              />
+              <div
+                class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <i class="fa-solid fa-download text-gold-400 text-2xl"></i>
+              </div>
+            </a>
+
+            <!-- <img src="brand/ft-text-2x.png" alt="Factory Time Logo" />
             <img src="web-app-manifest-512x512.png" alt="Factory Time Icon" />
             <img src="brand/ft-robot.png" alt="Factory Time Robot" />
             <img
               src="brand/factory-time-bg.png"
               alt="Factory Time Background"
-            />
+            /> -->
           </div>
         </section>
 
