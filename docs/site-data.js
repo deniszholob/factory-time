@@ -142,6 +142,10 @@ window.FactoryTimeData = {
       title: "Good Games 200 - Factory Game",
       embedUrl: "https://www.youtube.com/embed/BlRtv7Ypmwk",
     },
+    {
+      title: "A Promising Incremental Factory Builder",
+      embedUrl: "https://www.youtube.com/embed/j2saqx77aWk",
+    },
   ],
 
   presskitItems: [
