@@ -255,6 +255,10 @@ function renderStaticSections() {
     data.presskitItems,
     renderPresskitItem,
   );
+  getRequiredElement("concepts-grid").innerHTML = renderList(
+    data.concepts,
+    renderPresskitItem,
+  );
   getRequiredElement("footer-social-links").innerHTML = renderList(
     data.socialLinks,
     renderFooterSocialLink,

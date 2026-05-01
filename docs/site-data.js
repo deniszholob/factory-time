@@ -174,9 +174,47 @@ window.FactoryTimeData = {
       alt: "Factory Time Chronoforge On",
     },
     {
+      href: "brand/ft-chronoflame.png",
+      image: "brand/ft-chronoflame.png",
+      alt: "Factory Time Chronoflame",
+    },
+    {
       href: "brand/factory-time-bg.png",
       image: "brand/factory-time-bg.png",
       alt: "Factory Time Background",
+    },
+  ],
+
+  concepts: [
+    {
+      href: "media/ai/ft-robot-working-chronoforge.png",
+      image: "media/ai/ft-robot-working-chronoforge.png",
+      alt: "Robot Working on Chronoforge",
+    },
+    {
+      href: "media/ai/ft-last-factory.png",
+      image: "media/ai/ft-last-factory.png",
+      alt: "Last Factory",
+    },
+    {
+      href: "media/ai/ft-chronoforge construction.png",
+      image: "media/ai/ft-chronoforge construction.png",
+      alt: "Chronoforge Construction",
+    },
+    {
+      href: "media/ai/ft-last-factory-crystals.png",
+      image: "media/ai/ft-last-factory-crystals.png",
+      alt: "Last factory",
+    },
+    {
+      href: "media/ai/ft-last-factory-gears.png",
+      image: "media/ai/ft-last-factory-gears.png",
+      alt: "Last factory",
+    },
+    {
+      href: "media/ai/ft-time-vortex.png",
+      image: "media/ai/ft-time-vortex.png",
+      alt: "Time vortex",
     },
   ],
 
