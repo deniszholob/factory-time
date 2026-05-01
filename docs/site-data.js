@@ -126,6 +126,10 @@ window.FactoryTimeData = {
 
   videos: [
     {
+      title: "Factory Time Demo Trailer",
+      embedUrl: "https://www.youtube.com/embed/5Tnn7yrK-70",
+    },
+    {
       title: "Factory Time Developer Gameplay - Factory Automation Incremental",
       embedUrl: "https://www.youtube.com/embed/FQIiOtefRmQ",
     },
