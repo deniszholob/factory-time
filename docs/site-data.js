@@ -42,7 +42,7 @@ window.FactoryTimeData = {
       title: "Moddable Scenarios",
       description:
         "Create, share, and play custom scenarios via JSON configuration.",
-      icon: "game-icons/gameplay-icons/scenario-mod.png",
+      icon: "game-icons/ui-icons/scenario-mod.png",
       alt: "Scenarios",
     },
   ],
