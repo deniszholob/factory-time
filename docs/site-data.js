@@ -22,6 +22,16 @@ window.FactoryTimeData = {
       alt: "Steam",
       variant: "primary",
     },
+    {
+      id: "steam",
+      label: "Community",
+      shortLabel: "COMMUNITY",
+      heroLabel: "COMMUNITY",
+      href: "https://steamcommunity.com/app/4021110/",
+      icon: "game-icons/brand-icons/steam.png",
+      alt: "Community",
+      variant: "tertiary",
+    },
   ],
 
   aboutPoints: [
@@ -158,8 +168,8 @@ window.FactoryTimeData = {
 
   presskitItems: [
     {
-      href: "brand/ft-text-2x.png",
-      image: "brand/ft-text-2x.png",
+      href: "brand/ft-logo.png",
+      image: "brand/ft-logo.png",
       alt: "Factory Time Logo",
     },
     {
@@ -168,24 +178,24 @@ window.FactoryTimeData = {
       alt: "Factory Time Robot",
     },
     {
-      href: "brand/ft-chronoforge-off.png",
-      image: "brand/ft-chronoforge-off.png",
-      alt: "Factory Time Chronoforge Off",
+      href: "brand/ft-robot-shadow.png",
+      image: "brand/ft-robot-shadow.png",
+      alt: "Factory Time Robot",
     },
     {
-      href: "brand/ft-chronoforge-on.png",
-      image: "brand/ft-chronoforge-on.png",
-      alt: "Factory Time Chronoforge On",
+      href: "brand/ft-ships.png",
+      image: "brand/ft-ships.png",
+      alt: "Factory Time Ships",
     },
     {
-      href: "brand/ft-chronoflame.png",
-      image: "brand/ft-chronoflame.png",
-      alt: "Factory Time Chronoflame",
-    },
-    {
-      href: "brand/factory-time-bg.png",
-      image: "brand/factory-time-bg.png",
+      href: "brand/ft-bg.png",
+      image: "brand/ft-bg.png",
       alt: "Factory Time Background",
+    },
+    {
+      href: "brand/ft-bg-plain.png",
+      image: "brand/ft-bg-plain.png",
+      alt: "Factory Time Background Plain",
     },
   ],
 
@@ -219,6 +229,36 @@ window.FactoryTimeData = {
       href: "media/ai/ft-time-vortex.png",
       image: "media/ai/ft-time-vortex.png",
       alt: "Time vortex",
+    },
+    {
+      href: "media/ai/ft-text-2x.png",
+      image: "media/ai/ft-text-2x.png",
+      alt: "Factory Time Logo",
+    },
+    {
+      href: "media/ai/ft-robot.png",
+      image: "media/ai/ft-robot.png",
+      alt: "Factory Time Robot",
+    },
+    {
+      href: "media/ai/ft-chronoforge-off.png",
+      image: "media/ai/ft-chronoforge-off.png",
+      alt: "Factory Time Chronoforge Off",
+    },
+    {
+      href: "media/ai/ft-chronoforge-on.png",
+      image: "media/ai/ft-chronoforge-on.png",
+      alt: "Factory Time Chronoforge On",
+    },
+    {
+      href: "media/ai/ft-chronoflame.png",
+      image: "media/ai/ft-chronoflame.png",
+      alt: "Factory Time Chronoflame",
+    },
+    {
+      href: "media/ai/factory-time-bg.png",
+      image: "media/ai/factory-time-bg.png",
+      alt: "Factory Time Background",
     },
   ],
 

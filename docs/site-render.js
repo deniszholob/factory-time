@@ -52,11 +52,16 @@ function getActionClass(action, location) {
       ? "px-8 py-4 text-base lg:text-2xl"
       : "px-4 py-2 text-sm";
 
-  if (action.variant === "primary") {
-    return `${baseClass} ${sizeClass} border-gold-500/50 bg-sand-700/70 text-sand-50 hover:border-gold-400 hover:bg-sand-600/80 focus:ring-gold-500/70`;
+  if (action.variant === "secondary") {
+    return `${baseClass} ${sizeClass} border-purple-800/50 bg-purple-900/50 text-sand-100 hover:border-gold-600/50 hover:bg-sand-800/60 hover:text-gold-300 focus:ring-gold-500/50`;
   }
 
-  return `${baseClass} ${sizeClass} border-sand-700/50 bg-sand-900/40 text-sand-100 hover:border-gold-600/50 hover:bg-sand-800/60 hover:text-gold-300 focus:ring-gold-500/50`;
+  if (action.variant === "primary") {
+    return `${baseClass} ${sizeClass} border-green-500/70 bg-green-700/70 text-sand-50 hover:border-gold-400 hover:bg-sand-600/80 focus:ring-gold-500/70`;
+  }
+
+  // tertiary
+  return `${baseClass} ${sizeClass} border-orange-800/50 bg-orange-900/50 text-sand-100 hover:border-gold-600/50 hover:bg-sand-800/60 hover:text-gold-300 focus:ring-gold-500/50`;
 }
 
 function renderAction(action, location) {
