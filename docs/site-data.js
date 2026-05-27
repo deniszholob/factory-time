@@ -138,31 +138,48 @@ window.FactoryTimeData = {
     {
       title: "Factory Time Demo Trailer",
       embedUrl: "https://www.youtube.com/embed/825oAjFG9_w",
+      category: "Official",
     },
     {
       title: "Factory Time Developer Gameplay - Factory Automation Incremental",
       embedUrl: "https://www.youtube.com/embed/FQIiOtefRmQ",
+      category: "Official",
     },
     {
       title: "New Factory Incremental! | Factory Time (demo)",
       embedUrl: "https://www.youtube.com/embed/CTxNZeGqJBc",
+      category: "Community Highlights",
     },
     {
       title:
         "At the End of Everything… We Start Building – Factory Time – First Look",
       embedUrl: "https://www.youtube.com/embed/m0xw2ZR2XYw",
+      category: "Community Highlights",
     },
     {
       title: "Good Games 200 - Factory Game",
       embedUrl: "https://www.youtube.com/embed/BlRtv7Ypmwk",
+      category: "Community Highlights",
     },
     {
       title: "A Promising Incremental Factory Builder",
       embedUrl: "https://www.youtube.com/embed/j2saqx77aWk",
+      category: "Community Highlights",
     },
     {
       title: "Cool Interface... But What Am I Doing?! | Factory Time Demo Dive",
       embedUrl: "https://www.youtube.com/embed/b2g6Mna8p7o",
+      category: "Community Highlights",
+    },
+    {
+      title: "Factory Time Speed Run",
+      embedUrl: "https://www.youtube.com/embed/Ucpzsc7s0UY",
+      category: "Speed Runs",
+    },
+    {
+      title: "Factory Time Speed Run 2",
+      embedUrl: "https://www.youtube.com/embed/wQD8tN-KQDw",
+      category: "Speed Runs",
     },
   ],
 

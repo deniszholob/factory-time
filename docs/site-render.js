@@ -190,7 +190,7 @@ function renderGalleryImages(items) {
 
 function renderVideo(video) {
   return `
-    <div class="overflow-hidden rounded-lg border border-sand-700/30 transition-colors hover:border-gold-600/50">
+    <div class="overflow-hidden rounded-lg border border-sand-700/30 bg-black/20 transition-colors hover:border-gold-600/50">
       <iframe
         src="${escapeHtml(video.embedUrl)}"
         title="${escapeHtml(video.title)}"
@@ -201,8 +201,46 @@ function renderVideo(video) {
         loading="lazy"
         class="aspect-video w-full"
       ></iframe>
+
     </div>
   `;
+}
+// <div class="border-t border-sand-700/30 px-3 py-2">
+//   <p class="text-sm text-sand-300">${escapeHtml(video.title)}</p>
+// </div>
+
+function renderMediaCategory([category, videos]) {
+  return `
+    <div class="space-y-4">
+      <div class="flex items-baseline justify-between gap-4">
+        <h3 class="font-heading text-xl font-semibold uppercase tracking-[0.12em] text-sand-200">
+          ${escapeHtml(category)}
+        </h3>
+        <span class="text-xs uppercase tracking-[0.14em] text-sand-500">${videos.length} video${videos.length === 1 ? "" : "s"}</span>
+      </div>
+      <div class="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
+        ${renderList(videos, renderVideo)}
+      </div>
+    </div>
+  `;
+}
+
+function renderMediaSections(videos) {
+  const groupedVideos = new Map();
+
+  for (let index = 0; index < videos.length; index += 1) {
+    const video = videos[index];
+    const category = video.category || "Other";
+    const existing = groupedVideos.get(category);
+
+    if (existing) {
+      existing.push(video);
+    } else {
+      groupedVideos.set(category, [video]);
+    }
+  }
+
+  return renderList(Array.from(groupedVideos.entries()), renderMediaCategory);
 }
 
 function renderPresskitItem(item) {
@@ -252,10 +290,7 @@ function renderStaticSections() {
   getRequiredElement("gallery-grid").innerHTML = renderGalleryImages(
     data.galleryImages,
   );
-  getRequiredElement("media-grid").innerHTML = renderList(
-    data.videos,
-    renderVideo,
-  );
+  getRequiredElement("media-grid").innerHTML = renderMediaSections(data.videos);
   getRequiredElement("presskit-grid").innerHTML = renderList(
     data.presskitItems,
     renderPresskitItem,
