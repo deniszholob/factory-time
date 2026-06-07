@@ -157,18 +157,23 @@ window.FactoryTimeData = {
       category: "Community Highlights",
     },
     {
-      title: "Good Games 200 - Factory Game",
-      embedUrl: "https://www.youtube.com/embed/BlRtv7Ypmwk",
-      category: "Community Highlights",
-    },
-    {
       title: "A Promising Incremental Factory Builder",
       embedUrl: "https://www.youtube.com/embed/j2saqx77aWk",
       category: "Community Highlights",
     },
     {
+      title: "It's Time To Factory! - Factory Time - First Look",
+      embedUrl: "https://www.youtube.com/embed/6dsCHno8Apw",
+      category: "Community Highlights",
+    },
+    {
       title: "Cool Interface... But What Am I Doing?! | Factory Time Demo Dive",
       embedUrl: "https://www.youtube.com/embed/b2g6Mna8p7o",
+      category: "Community Highlights",
+    },
+    {
+      title: "Good Games 200 - Factory Game",
+      embedUrl: "https://www.youtube.com/embed/BlRtv7Ypmwk",
       category: "Community Highlights",
     },
     {
