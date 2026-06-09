@@ -157,6 +157,11 @@ window.FactoryTimeData = {
       category: "Community Highlights",
     },
     {
+      title: "Factory Time - Demo - Let's Play",
+      embedUrl: "https://www.youtube.com/embed/AzaWmpuYxAk",
+      category: "Community Highlights",
+    },
+    {
       title: "A Promising Incremental Factory Builder",
       embedUrl: "https://www.youtube.com/embed/j2saqx77aWk",
       category: "Community Highlights",
