@@ -310,5 +310,10 @@ window.FactoryTimeData = {
       icon: "game-icons/brand-icons/youtube.png",
       alt: "Youtube",
     },
+    {
+      href: "https://github.com/deniszholob/factory-time-public",
+      icon: "game-icons/brand-icons/github.png",
+      alt: "Github",
+    },
   ],
 };
