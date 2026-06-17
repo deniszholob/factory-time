@@ -17,7 +17,7 @@ window.FactoryTimeData = {
       label: "Play Demo",
       shortLabel: "PLAY DEMO",
       heroLabel: "PLAY DEMO & WISHLIST",
-      href: "https://store.steampowered.com/app/4021110/",
+      href: "https://store.steampowered.com/app/4021110/?utm_source=factory-time-website",
       icon: "game-icons/brand-icons/steam.png",
       alt: "Steam",
       variant: "primary",
@@ -27,7 +27,7 @@ window.FactoryTimeData = {
       label: "Community",
       shortLabel: "COMMUNITY",
       heroLabel: "COMMUNITY",
-      href: "https://steamcommunity.com/app/4021110/",
+      href: "https://steamcommunity.com/app/4021110/?utm_source=factory-time-website",
       icon: "game-icons/brand-icons/steam.png",
       alt: "Community",
       variant: "tertiary",
@@ -301,12 +301,12 @@ window.FactoryTimeData = {
 
   socialLinks: [
     {
-      href: "https://store.steampowered.com/app/4021110/",
+      href: "https://store.steampowered.com/app/4021110?utm_source=factory-time-website",
       icon: "game-icons/brand-icons/steam.png",
       alt: "Steam",
     },
     {
-      href: "https://deniszholob.itch.io/factory-time",
+      href: "https://deniszholob.itch.io/factory-time?utm_source=factory-time-website",
       icon: "game-icons/brand-icons/itchio.png",
       alt: "Itch.io",
     },
