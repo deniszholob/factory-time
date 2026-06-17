@@ -128,9 +128,19 @@ window.FactoryTimeData = {
       alt: "Prestige Progression Screen",
     },
     {
-      title: "Scenario Editor",
-      src: "media/screens/ft-editor.png",
-      alt: "Scenario Editor Screen",
+      title: "Scenario Editor Info",
+      src: "media/screens/ft-editor-info.png",
+      alt: "Scenario Editor Info Screen",
+    },
+    {
+      title: "Scenario Editor Inventory",
+      src: "media/screens/ft-editor-inventory.png",
+      alt: "Scenario Editor Inventory Screen",
+    },
+    {
+      title: "Scenario Editor Icons",
+      src: "media/screens/ft-editor-icons.png",
+      alt: "Scenario Editor Icons Screen",
     },
   ],
 
