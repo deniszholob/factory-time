@@ -182,6 +182,17 @@ window.FactoryTimeData = {
       category: "Community Highlights",
     },
     {
+      title: "Factory Time – From Hand Crafting to Universe‑Ending Automation",
+      embedUrl: "https://www.youtube.com/embed/9bbwVVe8X9M",
+      category: "Community Highlights",
+    },
+    {
+      title:
+        "Never Thought Managing a Factory Would be This Simple! | Factory Time - Demo",
+      embedUrl: "https://www.youtube.com/embed/NSMSZXqUsRU",
+      category: "Community Highlights",
+    },
+    {
       title: "Let's play and roast your Next Fest demos",
       embedUrl: "https://www.youtube.com/embed/TCANJVGloq8?start=10021",
       category: "Community Highlights",
